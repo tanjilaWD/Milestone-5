@@ -104,3 +104,8 @@ const products = [
 ];
 
 // map method
+const newProducts = products.map(product => product.price >= 1000
+   ?{...product, isExpensive: true}
+   : {...product, isExpensive: false}
+   );
+   console.log(newProducts);
